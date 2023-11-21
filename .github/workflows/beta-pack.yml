@@ -46,7 +46,7 @@ jobs:
       - name: Build Packages
         run: |
           cd android
-          ./gradlew assembleRelease
+          ./gradlew assembleDebug
 
       # Push tag to GitHub if package.json version's tag is not tagged
       - name: Get package version
